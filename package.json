@@ -1,7 +1,7 @@
 {
   "name": "fis-command-webfont",
   "description": "Ultimate SVG to webfont converter for FIS.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/fex-team/fis-command-webfont"

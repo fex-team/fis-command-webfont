@@ -29,10 +29,13 @@
 fis.config.set("webfont",{
     'src'       : '/static/fonts/icons',//图标目录
     'dest'      : '/static/fonts',  //产出字体目录
-    'fontname'  : 'zuoye_font' //产出字体名称
+    'fontname'  : 'zuoye_font', //产出字体名称
+    'order'     : 'name' //name或者time //图标按名称还是按修改时间排序，默认按名称排序
 });
 
 ```
+
+`注意`：每个图标都会递增生成对应的uinicode，为了避免更新后编码变动，建议icon按字母顺序加前缀并按名称排序
 
 您也可以通过命令行方式传递参数，具体见`fis webfont -h`。
 
@@ -55,7 +58,7 @@ git submodule update
 make clean all
 ```
 
-注意：编译完之后会在目录内产生`woff2_compress`和`woff2_decompress`，请将文件copy到PATH包含目录或者将当前目录添加到PATH中。
+注意：编译完之后会在目录内产生`woff2_compress`和`woff2_decompress`，请将文件copy到PATH目录(mac上为`/usr/local/bin`)或者将当前目录添加到PATH中。
 
 如果您不需要产出woff2字体，请在fis-conf.js配置里面添加一项指定产出字体:
 
