@@ -43,7 +43,7 @@ fis.config.set("webfont",{
 
 ## WOFF2问题
 
-WOFF2作为新一代字体标准比woff有明显的优势(大小减小30%)，但浏览器支持度低，具体见
+WOFF2作为新一代字体标准比woff有明显的优势(大小减小30%)，但浏览器支持度低，具体见[caniuse](http://caniuse.com/#search=woff2)
 
 目前woff2的字体转换工具很少，没有相应的npm模块。Google提供的[方案](https://github.com/google/woff2)也在开发中且不支持windows，如果您想生成woff2字体，需要在本机(mac或linux)安装Google的转换工具：
 
