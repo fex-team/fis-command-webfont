@@ -15,7 +15,9 @@
 
 ## 开始使用
 
-### `npm install -g fis-command-webfont`
+### 安装插件
+
+执行 `npm install -g fis-command-webfont` 全局安装
 
 ### 配置插件
 
